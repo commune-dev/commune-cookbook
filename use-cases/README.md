@@ -9,13 +9,15 @@ Real-world production patterns organized by domain. Every example is standalone 
 | Example | Stack | Complexity |
 |---------|-------|------------|
 | [AI Email Support Agent](customer-support/email-support-agent/) | LangChain + Commune | Beginner |
-| [Omnichannel Support](customer-support/omnichannel-support/) | Python + Commune | Advanced |
+| [SMS Support Bot](customer-support/sms-support/) | Python + Commune | Beginner |
+| [Omnichannel Support (Email + SMS)](customer-support/omnichannel-support/) | Python + Commune | Advanced |
 
 ### Hiring & Recruiting
 
 | Example | Stack | Complexity |
 |---------|-------|------------|
 | [Candidate Outreach Sequence](hiring-and-recruiting/candidate-email-outreach/) | Python + Commune | Intermediate |
+| [SMS Worker Dispatch](hiring-and-recruiting/sms-worker-dispatch/) | Python + Commune | Intermediate |
 | [Automated Interview Scheduling](hiring-and-recruiting/interview-scheduler/) | LangChain + Commune | Advanced |
 
 ### Sales & Marketing
@@ -23,6 +25,7 @@ Real-world production patterns organized by domain. Every example is standalone 
 | Example | Stack | Complexity |
 |---------|-------|------------|
 | [Cold Email Outreach](sales-and-marketing/cold-outreach-sequences/) | Python + Commune | Intermediate |
+| [SMS Lead Qualification](sales-and-marketing/sms-lead-qualification/) | Python + Commune | Intermediate |
 | [Newsletter Agent](sales-and-marketing/newsletter-agent/) | Python + Commune | Beginner |
 
 ### Notifications & Alerts
@@ -30,6 +33,7 @@ Real-world production patterns organized by domain. Every example is standalone 
 | Example | Stack | Complexity |
 |---------|-------|------------|
 | [Incident Alert System](notifications-and-alerts/incident-alerts/) | Python + Commune | Advanced |
+| [Transactional SMS](notifications-and-alerts/order-and-transactional-sms/) | Python + Commune | Beginner |
 
 ### Research
 
@@ -44,8 +48,14 @@ Real-world production patterns organized by domain. Every example is standalone 
 - [Candidate Outreach Sequence](hiring-and-recruiting/candidate-email-outreach/) — personalized recruiter sequences
 - [Cold Email Outreach](sales-and-marketing/cold-outreach-sequences/) — multi-step sales campaigns
 
-- [Omnichannel Support](customer-support/omnichannel-support/) — unified email support agent
-- [Incident Alert System](notifications-and-alerts/incident-alerts/) — email escalation with on-call alerts
+**SMS only**
+- [SMS Worker Dispatch](hiring-and-recruiting/sms-worker-dispatch/) — mass SMS to workers, track YES/NO confirmations
+- [SMS Lead Qualification](sales-and-marketing/sms-lead-qualification/) — qualify inbound leads via SMS conversation
+- [Transactional SMS](notifications-and-alerts/order-and-transactional-sms/) — order updates via SMS
+
+**Both Email + SMS**
+- [Omnichannel Support](customer-support/omnichannel-support/) — unified email and SMS support agent
+- [Incident Alert System](notifications-and-alerts/incident-alerts/) — email escalation with SMS on-call paging
 
 ## Quick start (any use case)
 
@@ -66,13 +76,16 @@ print(f"Your agent's address: {inbox.address}")
 - [research/email-research-agent/](research/email-research-agent/) — agent emails primary sources
 
 **Staffing / HR**
-- [hiring-and-recruiting/](hiring-and-recruiting/) — candidate outreach, interview scheduling
+- [hiring-and-recruiting/](hiring-and-recruiting/) — worker dispatch, candidate outreach, interview scheduling
 
 **Sales / Marketing**
-- [sales-and-marketing/](sales-and-marketing/) — cold outreach, newsletter agent
+- [sales-and-marketing/](sales-and-marketing/) — cold outreach, SMS qualification, newsletter agent
+
+**E-commerce**
+- [notifications-and-alerts/order-and-transactional-sms/](notifications-and-alerts/order-and-transactional-sms/) — order updates via SMS
 
 **Operations**
-- [notifications-and-alerts/incident-alerts/](notifications-and-alerts/incident-alerts/) — on-call escalation over email
+- [notifications-and-alerts/incident-alerts/](notifications-and-alerts/incident-alerts/) — on-call escalation over email and SMS
 
 ## Related
 
